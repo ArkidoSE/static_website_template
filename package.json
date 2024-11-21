@@ -1,0 +1,23 @@
+{
+  "name": "static_website_template",
+  "version": "1.0.0",
+  "description": "Starter kit for creating a static website with Astro and Contentful",
+  "main": "index.js",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "author": "Arkido AB",
+  "license": "MIT",
+  "dependencies": {
+    "@astrojs/solid-js": "^4.4.3",
+    "astro": "^4.16.13",
+    "contentful": "^11.2.2"
+  },
+  "devDependencies": {
+    "markdown-it": "^14.1.0",
+    "sass-embedded": "^1.81.0"
+  }
+}
