@@ -1,0 +1,31 @@
+---
+import type { EntryFieldTypes } from "contentful";
+
+import { client } from "@lib/contentful";
+import Default from "src/layouts/Default.astro";
+
+// Add proper details from your Contentful setup and uncomment the following block
+
+// type PageEntry = {
+//     contentTypeId: "MyContentType";
+//     fields: {
+//         title: EntryFieldTypes.Text;
+//     };
+// };
+// const pageResponse = await client.getEntry<PageEntry>("<enter id here");
+// const page = pageResponse.fields;
+
+const page = {
+    title: "Hello from Astro",
+};
+---
+
+<style lang="scss">
+    h1 {
+        color: #1a1a1a;
+    }
+</style>
+
+<Default>
+    <h1>{page.title}</h1>
+</Default>
