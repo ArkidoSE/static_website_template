@@ -2,7 +2,8 @@
 import type { EntryFieldTypes } from "contentful";
 
 import { client } from "@lib/contentful";
-import Default from "src/layouts/Default.astro";
+import Default from "@layouts/Default.astro";
+import Clicker from "@components/Clicker/Clicker";
 
 // Add proper details from your Contentful setup and uncomment the following block
 
@@ -24,8 +25,22 @@ const page = {
     h1 {
         color: #1a1a1a;
     }
+    .clickers {
+        display: flex;
+        justify-content: space-between;
+    }
 </style>
 
 <Default>
     <h1>{page.title}</h1>
+    <div class="clickers">
+        <div>
+            <p>This clicker is not an island and has no functionality</p>
+            <Clicker />
+        </div>
+        <div>
+            <p>This clicker is an island and can be interacted with</p>
+            <Clicker client:load />
+        </div>
+    </div>
 </Default>
