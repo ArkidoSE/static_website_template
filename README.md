@@ -9,7 +9,7 @@ This assumes that you want to use Contentful and Solid.js. If you want to use an
 ### Prerequisites
 
 1. Create a Contentful account
-2. Create a set of API keys
+2. Create a set of Contentful API keys
 
 ### Local setup
 
