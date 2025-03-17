@@ -12,9 +12,9 @@
   "author": "Arkido AB",
   "license": "MIT",
   "dependencies": {
-    "@astrojs/solid-js": "^4.4.3",
-    "astro": "^4.16.13",
-    "contentful": "^11.2.2"
+    "@astrojs/solid-js": "^5.0.5",
+    "astro": "^5.5.2",
+    "contentful": "^11.5.8"
   },
   "devDependencies": {
     "markdown-it": "^14.1.0",
