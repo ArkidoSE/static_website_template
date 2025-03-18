@@ -21,4 +21,5 @@ This assumes that you want to use Contentful and Solid.js. If you want to use an
 
 ## Build release package
 
-Run command `npm run build`. The release package will be placed in the `dist` folder in the root directory
+1. Edit `astro.config.mjs` and change the `site` value to the desired URL
+2. Run command `npm run build`. The release package will be placed in the `dist` folder in the root directory
